@@ -1,0 +1,56 @@
+body{
+    background-color: purple;
+}
+.titulo{
+    font-size: 25px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    padding:10px;
+    width: 19px;
+}
+.insta{
+    box-sizing: border-box;
+    border-radius:19px;
+    height: 19px;
+    width: 20em;
+    
+}
+
+.texto{
+    background-color: purple;
+    font-size: 2em;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color:yellow;
+    font-style: italic;
+    height: 25px;
+}
+
+.Mensagem{
+    background-color: purple;
+    font-size: 2em;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    color: yellow;
+    height: 15px;
+}
+
+.text{
+    height: 5em;
+    vertical-align: top;
+    border:radius 19px;
+    position:absolute;
+    width:320px;
+}
+
+#text{
+    width:240px; 
+    border-radius: 30px;
+    border-top: 19px;
+    box-sizing: border-box;
+    height: 7em;
+}
+
+.botao{
+    margin-top: 90px;
+    padding-right:90px;
+    padding-left: 90px;
+}
+
