@@ -24,7 +24,7 @@ ig.account.login(username,pass);
 app.use(express.urlencoded({extended:true}));
 app.get("/",function(req,res)
 {
-    res.sendFile(__dirname+"/root/main.html");
+    res.sendFile(__dirname+"/main.html");
     //res.sendFile(__dirname+"/public/style.css");
 });
 
