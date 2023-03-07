@@ -44,7 +44,7 @@ app.post('/', async (req,res) =>
     console.log(userId);
     const thread = ig.entity.directThread([userId.toString()]);
     //const texto = "Usuário que enviou o correio: "+insta1+"\n Mensagem: "+"\n"+text;
-    await thread.broadcastText("Usuário "+insta1+"lhe enviou uma mensagem:\n"+text);
+    await thread.broadcastText(" O usuário "+insta1+" lhe enviou uma mensagem:\n"+text);
     console.log(insta);
    
    

@@ -16,7 +16,7 @@ body{
     display: flex;
     height: 400px;
     width: 400px;
-    border-radius: 6px;
+    border-radius: 8px;
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -35,6 +35,14 @@ body{
     
 }
 .insta{
+    box-sizing: border-box;
+    border-radius:19px;
+    height: 19px;
+    width: 8em;
+    
+}
+.insta1
+{
     box-sizing: border-box;
     border-radius:19px;
     height: 19px;
