@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.static('public'));
 const ig =  new IgApiClient();
 
-const username = "loversecretanonymous";
+const username = "arrow_correio_elegante";
 const pass = "Cientista232@"
 ig.state.generateDevice(username);
 const repository = new AccountRepository(ig)
@@ -24,7 +24,7 @@ ig.account.login(username,pass);
 app.use(express.urlencoded({extended:true}));
 app.get("/",function(req,res)
 {
-    res.sendFile(__dirname+"/main.html");
+    res.sendFile(__dirname+"/root/main.html");
     //res.sendFile(__dirname+"/public/style.css");
 });
 
