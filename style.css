@@ -1,6 +1,14 @@
 body{
-    background-color: purple;
+    background-image:linear-gradient(red,pink);
 }
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .titulo{
     font-size: 25px;
     font-family: Brush Script MT, Brush Script Std, cursive;

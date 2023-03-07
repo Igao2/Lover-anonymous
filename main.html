@@ -1,25 +1,78 @@
 <!DOCTYPE html>
 <head>
 <meta lang="pt-br" UTF="8">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
+<script src="https://unpkg.com/piii"></script>
 <body>
-    <div class="titulo">
-    <h1>Correio Elegante</h1>
+    <div class="conttitulo">
+        <div class="titulo">
+            <h1>Correio Elegante</h1>
+        </div>
+            
     </div>
+    </div>    
+    <div class="conteiner">
+        
+        <br><br><br>
+    <div class="form">
     <form method="POST">
+        
     <div class="texto">Instagram do(a) cortejado(a):</div> 
-    <br><br>
-    <input type="text" name="insta" id="insta" class="insta">
-    <br><br>
     <br>
+    <input type="text"  name="insta" id="insta" class="insta">
+    <br><br>
+    <div class="texto">Seu instagram:</div>
+    <br>
+    <input type="text"  name="insta1" id="insta1" class="insta1">
+    <br><br>
     <div class="Mensagem"> Texto:</div>
+
     <br><br>
 
-    <textarea name="text" id="text" class="text"></textarea>
+    <textarea name="text" id="text" class="text" onkeyup="confere()"></textarea>
     <br><br>
-    <input type="submit" class="botao" text="Salvar">
+    <input type="submit" class="botao" name="botao" id="botao" text="Salvar">
     </form>
+</div>
+</div>
 
 </body>
+<script>
+    
+   function confere()
+   {
+    const btn = document.querySelector("#botao");
+    var odio = false;
+    var texto = document.querySelector("#text").value;
+    const proibido = ['Gordo','Gorda','gordo','gorda','filho da puta','puta','Filho da puta','Desgraçada','Puta','Desgraçado','Filha da puta',
+    'filha da puta','Arrombado','arrombado','Arrombada','arrombada','Negro','Negra','Preto','Preta','Suicidio','suicidio','preto','preta','negro','negra','Matar',
+    'matar','desgraçado','desgraçada','putinha','putona','gay','Gay','Gayzão','gayzão','viado','viadinho','smt','SMT','buceta','Buceta','bct','pau','Pau','Pênis','pênis',
+    'Pussy','xereca','xerecão','xerequinha','Xerecão','Xerequinha','Xereca','vagina','Vagina','xana','Xana','xaninha','Xanona','perereca','Perereca',
+    'Bucetinha','Bucetão','bct','penis','sexo','peito','peitos','Peito','Peitos','se mata','Se mata','transar','transa','Transar','Transa','te comer','Te comer',
+    'Horrível','horrível','horrivel','Horrivel','horriveis','Horrivel','Horrível','Horríveis','bosta','Bosta','merda','Morte','morte','morto','Morto','morta','Morta','Foda-se','Foda - se','foda-se',
+    'foda - se','foda -se','fds','foda-si','fodasi','fdsi','vtnc','FODER','foder','Vai tomar no cu','vai tomar no cu','vai toma no cu','cu','CU','Cuzão',
+    'x3','f0','0','3','cú','Cú','Cú','Cu','fuck','cum','Tição','tição','tiçao'];
+    for(var i = 0;i<proibido.length;i++)
+    {
+        var b = proibido[i].toString();
+        if(texto.includes(proibido[i]))
+        {
+            alert("Palavras de ódio não serão permitidas!");
+            document.querySelector("#text").value = "";
+            odio = true;
+            //console.log("AAAAAAAAa");
+            
+        }
+    }
+    btn.addEventListener("click",function(e){
+
+        
+
+    });
+   
+
+   }
+
+    </script>
 </html>

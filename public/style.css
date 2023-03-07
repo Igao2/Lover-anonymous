@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Acme);
+body{
+    background: url(/4871703.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.conteiner{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.form{
+    background-image: url(/8314.jpg);
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+   
+    box-shadow: 4px 4px 4px 4px rgb(0, 0, 0);
+
+}
+.conttitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+  
+    font-family: 'Acme',sans-serif;
+    
+}
+.insta{
+    box-sizing: border-box;
+    border-radius:19px;
+    height: 19px;
+    width: 8em;
+    
+}
+
+.texto{
+    font-size: 17px;
+    font-family: 'Acme',sans-serif;
+    color:black;
+    font-style: italic;
+    height: 12px;
+}
+
+.Mensagem{
+    font-size: 20px;
+    font-family:'Acme',sans-serif;
+    color: black;
+    height: 15px;
+}
+
+.text{
+    height: 8em;
+    vertical-align: top;
+    border:radius 19px;
+    position:absolute;
+    width: 8em;
+}
+
+#text{
+    width:240px; 
+    border-top: 19px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 7em;
+}
+
+.botao{
+    border-radius: 10px;
+    margin-top: 100px;
+    padding-right:100px;
+    padding-left: 100px;
+    font-family: 'Acme',sans-serif;
+    font-size: large;
+    background-color: rgb(233, 133, 203);
+}
+
