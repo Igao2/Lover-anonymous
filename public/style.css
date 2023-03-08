@@ -1,9 +1,48 @@
 @import url(https://fonts.googleapis.com/css?family=Acme);
 body{
+    
     background: url(/4871703.jpg);
     background-size: cover;
+    background-repeat:calc();
     background-position: center center;
 }
+@media screen and (min-width: 375px) and (orientation:portrait){
+    #form{
+     box-sizing: 400px 400px;
+    height: 700px;
+    width: 600px;
+    display: flex;
+    }
+    #texto{
+        font-size: 40px;
+        margin-top: 1px;
+    }
+    .insta{
+        height: 60px;
+        padding: 10px 10px;
+        font-size: 26px;
+        
+    }
+    .insta1{
+        height: 60px;
+        padding: 10px 10px;
+        font-size: 26px;
+    }
+    #Mensagem{
+        font-size: 40px;
+    }
+    .titulo
+    {
+        font-size: 33px;
+    }
+    #text{
+        font-size: 19px;
+    }
+    #botao{
+        font-size: 32px;
+    }
+
+   }
 .conteiner{
    
     display: flex;
@@ -12,7 +51,7 @@ body{
    
 }
 .form{
-    background-image: url(/8314.jpg);
+    /*background-image: url(/8314.jpg);*/
     display: flex;
     height: 400px;
     width: 400px;

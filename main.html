@@ -15,23 +15,21 @@
     <div class="conteiner">
         
         <br><br><br>
-    <div class="form">
+    <div class="form" id="form">
     <form method="POST" onsubmit="setTimeout(function(){
         alert('Mensagem enviada!');
         window.location.reload();},10);">
         
-    <div class="texto">Instagram do(a) cortejado(a):</div> 
-    <br>
+    <div class="texto" id="texto">Instagram do(a) cortejado(a):</div> 
+    <br><br>
     <input type="text"  name="insta" id="insta" class="insta">
     <br><br>
-    <div class="texto">Seu instagram:</div>
-    <br>
+    <div class="texto" id="texto">Seu instagram:</div>
+    <br><br>
     <input type="text"  name="insta1" id="insta1" class="insta1">
     <br><br>
-    <div class="Mensagem"> Texto:</div>
-
+    <div class="Mensagem" id="Mensagem">Texto:</div>
     <br><br>
-
     <textarea name="text" id="text" class="text" onkeyup="confere()"></textarea>
     <br><br>
     <input type="submit" class="botao" name="botao" id="botao" text="Salvar" onclick="window.location.reload()">
