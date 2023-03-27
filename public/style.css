@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Cookie);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(https://fonts.googleapis.com/css?family=Sono);
 body{
     
     background: url(/4871703.jpg);
@@ -83,6 +84,7 @@ body{
     border-radius:18px;
     height: 19px;
     width: 8em;
+    font-family: 'Sono',sans-serif;
     
     
 }
@@ -92,7 +94,7 @@ body{
     border-radius:18px;
     height: 19px;
     width: 8em;
-    
+    font-family: 'Sono',sans-serif;
 }
 
 .texto{
@@ -120,6 +122,7 @@ body{
     box-sizing: border-box;
     outline: auto;
     resize: none;
+    font-family: 'Sono',sans-serif;
 }
 
 #text{

@@ -52,7 +52,11 @@
    function confere()
    {
     
-   
+    var insta1 = document.querySelector("#insta1").value;
+    if(insta1=="")
+    {
+        document.querySelector("#insta1").value = "Anônimo";
+    }
     const btn = document.querySelector("#botao");
     var odio = false;
     var texto = document.querySelector("#text").value;
