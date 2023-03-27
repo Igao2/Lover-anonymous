@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Acme);
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 body{
     
     background: url(/4871703.jpg);
@@ -8,25 +9,25 @@ body{
 }
 @media screen and (min-width: 375px) and (orientation:portrait){
     #form{
-     box-sizing: 400px 400px;
-    height: 700px;
-    width: 600px;
-    display: flex;
+     zoom: 240%;
     }
-    #texto{
+    .titulo{
+        zoom: 220%;
+    }
+    /*#texto{
         font-size: 40px;
         margin-top: 1px;
     }
     .insta{
         height: 60px;
         padding: 10px 10px;
-        font-size: 26px;
+        font-size: 20px;
         
     }
     .insta1{
         height: 60px;
         padding: 10px 10px;
-        font-size: 26px;
+        font-size: 20px;
     }
     #Mensagem{
         font-size: 40px;
@@ -41,8 +42,9 @@ body{
     #botao{
         font-size: 32px;
     }
-
-   }
+*/
+}
+   
 .conteiner{
    
     display: flex;
@@ -59,8 +61,9 @@ body{
     align-items: center;
     justify-content: center;
     text-align: left;
-   
-    box-shadow: 4px 4px 4px 4px rgb(0, 0, 0);
+    padding: 30px 30px;
+    background-color: rgb(255, 222, 234);
+    box-shadow: 4px 4px 4px 4px rgb(215, 177, 189);
 
 }
 .conttitulo{
@@ -70,36 +73,40 @@ body{
 }
 .titulo{
   
-    font-family: 'Acme',sans-serif;
+    font-family: 'Cookie',sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
     
 }
 .insta{
     box-sizing: border-box;
-    border-radius:19px;
+    border-radius:18px;
     height: 19px;
     width: 8em;
+    
     
 }
 .insta1
 {
     box-sizing: border-box;
-    border-radius:19px;
+    border-radius:18px;
     height: 19px;
     width: 8em;
     
 }
 
 .texto{
-    font-size: 17px;
-    font-family: 'Acme',sans-serif;
+    font-size: 19px;
+    font-family: 'Amatic SC',sans-serif;
     color:black;
-    font-style: italic;
+    font-weight: bold;
     height: 12px;
 }
 
 .Mensagem{
     font-size: 20px;
-    font-family:'Acme',sans-serif;
+    font-family:'Amatic SC',sans-serif;
+    font-weight: bold;
     color: black;
     height: 15px;
 }
@@ -107,15 +114,18 @@ body{
 .text{
     height: 8em;
     vertical-align: top;
-    border:radius 19px;
+    border:radius 16px;
     position:absolute;
     width: 8em;
+    box-sizing: border-box;
+    outline: auto;
+    resize: none;
 }
 
 #text{
     width:240px; 
     border-top: 19px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-sizing: border-box;
     height: 7em;
 }
@@ -125,8 +135,9 @@ body{
     margin-top: 100px;
     padding-right:100px;
     padding-left: 100px;
-    font-family: 'Acme',sans-serif;
+    font-family: 'Amatic SC',sans-serif;
     font-size: large;
-    background-color: rgb(233, 133, 203);
+    font-weight: bold;
+    background-color: rgba(250, 104, 104, 0.459);
 }
 
