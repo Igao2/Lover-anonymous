@@ -16,9 +16,18 @@
         
         <br><br><br>
     <div class="form" id="form">
-    <form method="POST" onsubmit="setTimeout(function(){
+    <form method="POST" onsubmit="var insta1 = document.querySelector('#insta1').value;
+    var insta2 = document.querySelector('#insta').value;
+    if(insta1 == ''||insta2 =='')
+    {
+        alert('Preencha todos os campos!');
+        return false;
+    }
+    else{
+        setTimeout(function(){
         alert('Mensagem enviada!');
-        window.location.reload();},10);">
+        window.location.reload();},10);
+    }">
         
     <div class="texto" id="texto">Instagram do(a) cortejado(a):</div> 
     <br><br>
@@ -43,7 +52,7 @@
    function confere()
    {
     
-
+   
     const btn = document.querySelector("#botao");
     var odio = false;
     var texto = document.querySelector("#text").value;
@@ -55,8 +64,8 @@
     'Horrível','horrível','horrivel','Horrivel','horriveis','Horrivel','Horrível','Horríveis','bosta','Bosta','merda','Morte','morte','morto','Morto',
     'morta','Morta','Foda-se','Foda - se','foda-se','foda - se','foda -se','fds','foda-si','fodasi','fdsi','vtnc','FODER','foder','Vai tomar no cu','Fod','fod','fuedase','Fuedase','Idiota','idiota',' i diota','-','IDIOTA','FILHO DA PUTA',
     'vai tomar no cu','vai toma no cu','cu','CU','Cuzão','x3','f0','0','3','1','4','cú','Cú','Cú','Cu','fuck','cum','Tição','tição','tiçao','macaco','Macaco','mcaco','Mcaco','*',
-     'vadia','Vadia','vadiazinha','safada','Safada','safado','Safado','gostosa','Gostosa','gostoso','Gostoso','pussy','prexeca','rola','Rola','Prexeca','xeca','Xeca','mata','mato','p ', 'g ',
-      'P ', 'G ', 'v ','V ','s ','S ','x ','X ','d ','D ','c ','C ','h ','H ','m ','M ','c ','C '];
+     'vadia','Vadia','vadiazinha','safada','Safada','safado','Safado','gostosa','Gostosa','gostoso','Gostoso','pussy','prexeca','rola','Rola','Prexeca','xeca','Xeca','mata','mato','p i r o c a ', 'g a y ', 'p i r o c a','sexo','desgraça',' v a d i a'
+      ,'P i r o c a', 'G a y', 'v a d i a','V a d i a','s e x o','S e x o','x o t a','X o t a ','d e s g r a ç a','D ','c u ','C u ','h o m o s e x u a l','H o m o s e x u a l ','m a c a c o ','M a c a c o','c o l o c a','C o l o c a', ' G o r d o', 'G o r d a','g o r d o', 'g o r d a','desgracado','desgracada'];
     for(var i = 0;i<proibido.length;i++)
     {
         
@@ -71,7 +80,7 @@
         }
     }
     btn.addEventListener("click",function(e){
-
+    
         location.reload();
 
     });
