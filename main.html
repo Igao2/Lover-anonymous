@@ -8,6 +8,10 @@
     <div class="conttitulo">
         <div class="titulo">
             <h1>Correio Elegante</h1>
+            <div class="imagineallthepeople">
+                
+            </div>
+
         </div>
             
     </div>
@@ -24,6 +28,7 @@
         return false;
     }
     else{
+        arroba();
         setTimeout(function(){
         alert('Mensagem enviada!');
         window.location.reload();},10);
@@ -31,11 +36,11 @@
         
     <div class="texto" id="texto">Instagram do(a) cortejado(a):</div> 
     <br><br>
-    <input type="text"  name="insta" id="insta" class="insta">
+    <input type="text"  name="insta" id="insta" class="insta" >
     <br><br>
     <div class="texto" id="texto">Seu instagram:</div>
     <br><br>
-    <input type="text"  name="insta1" id="insta1" class="insta1">
+    <input type="text"  name="insta1" id="insta1" class="insta1" >
     <br><br>
     <div class="Mensagem" id="Mensagem">Texto:</div>
     <br><br>
@@ -49,14 +54,32 @@
 </body>
 <script>
     
+function arroba()
+{
+    var insta = document.querySelector("#insta").value;
+    var insta1 = document.querySelector("#insta1").value;
+    if(insta.includes("@"))
+    {
+        insta = insta.replace("@","");
+        document.querySelector("#insta").value = insta;
+    }
+    if(insta1.includes("@"))
+    {
+        insta1 = insta1.replace("@","");
+        document.querySelector("#insta1").value = insta1;
+    }
+}
    function confere()
    {
     
+    var insta = document.querySelector("#insta").value;
     var insta1 = document.querySelector("#insta1").value;
     if(insta1=="")
     {
         document.querySelector("#insta1").value = "Anônimo";
     }
+    
+   
     const btn = document.querySelector("#botao");
     var odio = false;
     var texto = document.querySelector("#text").value;
