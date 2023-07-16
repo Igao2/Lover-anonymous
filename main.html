@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <script src="https://unpkg.com/piii"></script>
+<title>Correio Elegante</title>
 <body>
     <div class="conttitulo">
         <div class="titulo">
@@ -79,9 +80,8 @@ function arroba()
         document.querySelector("#insta1").value = "Anônimo";
     }
     
-   
-    const btn = document.querySelector("#botao");
     var odio = false;
+    const btn = document.querySelector("#botao");
     var texto = document.querySelector("#text").value;
     const proibido = ['Gordo','Gorda','vagabunda','Vagabunda','vagabundo','Vagabundo','caco','macac','gordo','gorda','filho da puta','puta','Filho da puta','Desgraçada','Puta','Desgraçado','Filha da puta',
     'filha da puta','Arrombado','arrombado','Arrombada','arrombada','Negro','Negra','Preto','Preta','Suicidio','suicidio','preto','preta','negro','negra','Matar',
@@ -92,19 +92,25 @@ function arroba()
     'morta','Morta','Foda-se','Foda - se','foda-se','foda - se','foda -se','fds','foda-si','fodasi','fdsi','vtnc','FODER','foder','Vai tomar no cu','Fod','fod','fuedase','Fuedase','Idiota','idiota',' i diota','-','IDIOTA','FILHO DA PUTA',
     'vai tomar no cu','vai toma no cu','cu','CU','Cuzão','x3','f0','0','3','1','4','cú','Cú','Cú','Cu','fuck','cum','Tição','tição','tiçao','macaco','Macaco','mcaco','Mcaco','*',
      'vadia','Vadia','vadiazinha','safada','Safada','safado','Safado','gostosa','Gostosa','gostoso','Gostoso','pussy','prexeca','rola','Rola','Prexeca','xeca','Xeca','mata','mato','p i r o c a ', 'g a y ', 'p i r o c a','sexo','desgraça',' v a d i a'
-      ,'P i r o c a', 'G a y', 'v a d i a','V a d i a','s e x o','S e x o','x o t a','X o t a ','d e s g r a ç a','D ','c u ','C u ','h o m o s e x u a l','H o m o s e x u a l ','m a c a c o ','M a c a c o','c o l o c a','C o l o c a', ' G o r d o', 'G o r d a','g o r d o', 'g o r d a','desgracado','desgracada'];
+      ,'P i r o c a', 'G a y', 'v a d i a','V a d i a','s e x o','S e x o','x o t a','X o t a ','d e s g r a ç a','D ','c u ','C u ','h o m o s e x u a l','H o m o s e x u a l ','m a c a c o ','M a c a c o','c o l o c a','C o l o c a', ' G o r d o', 'G o r d a','g o r d o', 'g o r d a','desgracado','desgracada'
+    ,'Deus','deus','D e u s','d e u s','abençoe','abencoe','Jesus','jesus','J e s u s','j e s u s'];
     for(var i = 0;i<proibido.length;i++)
     {
         
         var b = proibido[i].toString();
         if(texto.includes(proibido[i]))
         {
-            alert("Palavras de ódio não serão permitidas!");
-            document.querySelector("#text").value = "";
+           
             odio = true;
-            //console.log("AAAAAAAAa");
+            
             
         }
+    }
+    if(odio)
+    {
+        alert("Palavras de ódio não serão permitidas!");
+            document.querySelector("#text").value = "";
+            odio = false;
     }
     btn.addEventListener("click",function(e){
     

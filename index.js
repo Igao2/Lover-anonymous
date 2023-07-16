@@ -14,12 +14,7 @@ app.use(express.json());
 app.use(express.static('public'));
 const ig =  new IgApiClient();
 
-const username = "arrow_correio_elegante";
-const pass = "Cientista232@"
-ig.state.generateDevice(username);
-const repository = new AccountRepository(ig)
-ig.state.proxyUrl = teze;
-ig.account.login(username,pass);
+
 
 app.use(express.urlencoded({extended:true}));
 app.get("/",function(req,res)
@@ -38,7 +33,12 @@ app.post('/', async (req,res) =>
     var insta = request1;
     var insta1 = request2;
     var text = request;
-    
+    const username = "arrow_correio_elegante";
+const pass = "Cientista232@"
+ig.state.generateDevice(username);
+const repository = new AccountRepository(ig)
+ig.state.proxyUrl = teze;
+ig.account.login(username,pass);
     
     const userId = await ig.user.getIdByUsername(insta);
     console.log(userId);
