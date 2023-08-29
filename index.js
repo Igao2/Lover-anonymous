@@ -8,8 +8,6 @@ const { AccountRepository } = require("instagram-private-api/dist/repositories/a
 const { log } = require("console");
 const { text } = require("express");
 const app = express();
-var sexo =""
-var teze =""
 app.use(express.json());
 app.use(express.static('public'));
 const ig =  new IgApiClient();
@@ -34,11 +32,11 @@ app.post('/', async (req,res) =>
     var insta1 = request2;
     var text = request;
     const username = "arrow_correio_elegante";
-const pass = "Cientista232@"
-ig.state.generateDevice(username);
-const repository = new AccountRepository(ig)
-ig.state.proxyUrl = teze;
-ig.account.login(username,pass);
+    const pass = "Cientista232@"
+    ig.state.generateDevice(username);
+    const repository = new AccountRepository(ig)
+    ig.state.proxyUrl = teze;
+    ig.account.login(username,pass);
     
     const userId = await ig.user.getIdByUsername(insta);
     console.log(userId);
