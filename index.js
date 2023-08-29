@@ -8,6 +8,7 @@ const { AccountRepository } = require("instagram-private-api/dist/repositories/a
 const { log } = require("console");
 const { text } = require("express");
 const app = express();
+var teze = "";
 app.use(express.json());
 app.use(express.static('public'));
 const ig =  new IgApiClient();
